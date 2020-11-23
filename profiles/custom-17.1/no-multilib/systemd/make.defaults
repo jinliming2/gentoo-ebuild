@@ -1,0 +1,10 @@
+RUBY_TARGETS="-* ruby26"
+
+PYTHON_TARGETS="-* python3_8"
+PYTHON_SINGLE_TARGET="-* python3_8"
+
+#POSTGRES_TARGETS=""
+
+#PHP_TARGETS=""
+
+#ADA_TARGET=""
