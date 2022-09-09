@@ -1,7 +1,7 @@
-RUBY_TARGETS="-* ruby26"
+#RUBY_TARGETS="-* ruby27"
 
-PYTHON_TARGETS="-* python3_8"
-PYTHON_SINGLE_TARGET="-* python3_8"
+#PYTHON_TARGETS="-* python3_9"
+#PYTHON_SINGLE_TARGET="-* python3_9"
 
 #POSTGRES_TARGETS=""
 

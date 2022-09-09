@@ -1,0 +1,22 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -98,11 +98,6 @@ add_custom_target( docs-html
+ )
+ 
+ 
+-# create_symlink( ${CMAKE_SOURCE_DIR}/tests tests)
+-ADD_CUSTOM_TARGET(prepare_tests ALL
+-                  COMMAND ${CMAKE_COMMAND} -E create_symlink ${CMAKE_SOURCE_DIR}/tests tests
+-)
+-
+ add_custom_target( tests
+ 	COMMAND echo "Running the tests"
+ 	COMMAND echo "Note you are expected to:"
+@@ -119,7 +114,6 @@ add_custom_target( tests
+ 	COMMAND ${LUA_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/churn-direct.lua
+ 	COMMAND ${LUA_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tests/teardown.lua
+ 	COMMAND echo "Finished all successfull!"
+-	DEPENDS prepare_tests
+ )
+ 
+ # compiling and linking it all together
